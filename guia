@@ -1,2 +1,29 @@
 Guia de Comandos Linux:
-comando echo --> 
+echo --> printar en pantalla
+pwd --> Printar directorio actual
+ls --> Printar contenido del directorio
+cat nombre_archivo --> printar archivo por pantalla
+cat > nombre_archivo --> Crear archivo vacio llamado "nombre_archivo"
+tail -n5 nombre_archivo --> Printar las ultimas 5 lineas de un archivo 
+
+mkdir -p /dir1/dir2 --> Crear el/los directorio/s si todavia no existen.
+
+cp archivo1 dir1 --> Copiar archivo a algun directorio
+mv archivo1 dir1 --> Mover archivo a algun directorio
+
+ln -s ruta_archivo ruta_enlace --> Crear enlace simbolico (symlink)
+
+rm <opcion> directorio/fichero_eliminar --> eliminar
+  <opcion>
+   |-> -f --> forzar borrado
+   |-> -i --> Confirmar cada proceso de borrado
+   |-> -r --> Eliminar tanto carpeta como contenidos
+      (pueden combinarse)
+
+*********Extra*******
+si usamos * con rm, se eliminara todo con escepcion de lo que empiece con un punto (.). Si queremos eliminar estos archivos tambien, usamos .*
+*************************
+
+grep "palabra_buscar" nombre_archivo --> Para ver solo las lineas que contienen la "palabra_buscar" en el archivo "nombre_Archivo"
+
+
