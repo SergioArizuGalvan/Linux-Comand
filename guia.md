@@ -87,7 +87,7 @@ fi
 
 los condicionales:
 | Para los numeros | No numéricos |
-| --- | ---|
+| :---: | :---: |
 | -eq |	= |
 | -ne | != |
 | -lt | < |
