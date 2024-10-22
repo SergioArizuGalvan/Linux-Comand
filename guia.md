@@ -74,8 +74,10 @@ resultado=$((<operacion>))
 
 # CONDICIONALES
 
-##IF
+## IF
+
 if [condicion] ;
+
 then
 	...
 else
