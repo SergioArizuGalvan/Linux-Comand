@@ -31,19 +31,21 @@ grep "palabra_buscar" nombre_archivo --> Para ver solo las lineas que contienen 
 
 # REDIRECCION DE SALIDA DE FICHERO
 
-Si "__>__", el resultado se sobreescribe en el fichero. Si este NO EXISTE, se crea.
+Si "__>__" , el resultado se sobreescribe en el fichero. Si este NO EXISTE, se crea.
 
-Si ">>", el resultado se añade al contenido del fichero. Si este NO existe, se crea.
+Si "__>>__" , el resultado se añade al contenido del fichero. Si este NO existe, se crea.
 
-Si "2>", si el comando da error, se sobreescribe el fichero con el error. Si este NO existe, se crea.
-Si "2>>", si el comando da error, el resultado se añade al contenido del fichero. Si este no existe, se crea.
+Si "__2>__" , si el comando da error, se sobreescribe el fichero con el error. Si este NO existe, se crea.
 
-Si "&>", tanto si el comando se resuelve como si da error, se mandara al fichero siguiendo las normas previamente mencionadas.
+Si "__2>>__" , si el comando da error, el resultado se añade al contenido del fichero. Si este no existe, se crea.
 
-Si "<", recibir la entrada de datos de otro lugar
-Si "<<", los datos los recibe desde terminalk hasta llegar a la palabra de fin de coamndo.
+Si "__&>__" , tanto si el comando se resuelve como si da error, se mandara al fichero siguiendo las normas previamente mencionadas.
 
-Si "|", ejecución del 1r comando y lo concatena con el 2o comando.
+Si "__<__" , recibir la entrada de datos de otro lugar.
+
+Si "__<<__" , los datos los recibe desde terminalk hasta llegar a la palabra de fin de coamndo.
+
+Si "__|__" , ejecución del 1r comando y lo concatena con el 2o comando.
 
 *******************************************TEMA 2.2 ***********************************************************************
 > [!NOTE]
