@@ -71,8 +71,10 @@ Operaciones guardadas en variables
 
 resultado=$((<operacion>))
 
-CONDICIONALES
 
+# CONDICIONALES
+
+##IF
 if [condicion] ;
 then
 	...
