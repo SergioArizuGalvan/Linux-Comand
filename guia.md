@@ -29,9 +29,10 @@ grep "palabra_buscar" nombre_archivo --> Para ver solo las lineas que contienen 
 
 
 
-REDIRECCION DE SALIDA DE FICHERO
+# REDIRECCION DE SALIDA DE FICHERO
 
 Si __>__, el resultado se sobreescribe en el fichero. Si este NO EXISTE, se crea.
+
 Si ">>", el resultado se añade al contenido del fichero. Si este NO existe, se crea.
 
 Si "2>", si el comando da error, se sobreescribe el fichero con el error. Si este NO existe, se crea.
