@@ -86,14 +86,14 @@ fi
 
 
 los condicionales:
-Para los numeros			No numéricos
-
--eq								=
--ne								!=
--lt								<
--gt								>
--le								<=
--ge								>=
+| Para los numeros | No numéricos |
+| --- | ---|
+| -eq |	= |
+| -ne | != |
+| -lt | < |
+| -gt | > |
+| -le | <= |
+| -ge |	>= |
 
 
 
