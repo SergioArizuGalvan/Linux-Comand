@@ -75,7 +75,7 @@ resultado=$((<operacion>))
 # CONDICIONALES
 
 ## IF
-
+```
 if [condicion] ;
 
 then
@@ -83,7 +83,7 @@ then
 else
 	...
 fi
-
+```
 
 los condicionales:
 | Para los numeros | No numéricos |
@@ -96,7 +96,7 @@ los condicionales:
 | -ge |	>= |
 
 
-
+```
 case <variable> in
 accion1)
 	comandos accion1;;
@@ -104,25 +104,27 @@ accion2)
 	comandos ...;
 	comandos accion2;;
 esac
-
-
-
+```
+```
 while [conddicion]
 do
 	comandos
 done
-
+```
+```
 (until = hasta que)
 until [condicion]
 do
 	comandos
 done
+```
 
+```
 for <variable> in <conjunto_valores>
 do
 	comandos
 done
-
+```
 
 
 seq <empezar> <salto> <nºveces>
@@ -133,12 +135,12 @@ para usarlo en un for hay que ponerlo entre comillas inversas (`)
 
 
 funciones****************************+
-
+```
 Funcion()
 {
 	....
 }
-
+```
 
 Funcion (llamada a la funcion llamada Funcion)
 
