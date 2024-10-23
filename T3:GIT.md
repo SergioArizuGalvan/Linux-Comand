@@ -64,6 +64,8 @@ gti checkout tag/<nombre_tag> --> moverse a una instantanea de un tag
 
 git branch <nombre_rama> --> Crear rama llamada nombre_rama
 
+git branch -d <nombre-rama> --> Eliminar rama
+
 git swith <nombre_rama> --> para moverme a la rama nombre_rama 
 
 >[!Note]
