@@ -1,7 +1,7 @@
 # TEMA 3: GIT
 ## GIT
 
-como configurar git
+# como configurar git
 >[!note]
 >Neceitamos un usuario y un email
 
