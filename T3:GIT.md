@@ -19,7 +19,7 @@ git add . --> Añadir todo
 
 git commit --> Instantania de guardado
 >[!note]
->Se abrira un Vin par añadir el comentario
+>Se abrira un Vin par añadir el comentario (configurable para que se abra con otro editor)
 
 git commit -m "Mensaje" 
 >[!Note]
@@ -78,6 +78,27 @@ git merge <rama_comprobar> --> Combinar rama_comprobar y mi rama en mi rama de t
 >[!Note]
 > Si hay conflicto (el conflicto es si hay modificaciones en las mismas lineas de un mismio archivo, no hay conflicto si se modifica un mismo archivo en distintas lineas), se mostrará las diferencias entre ramas
 
+Cosas de clase:
+git clone 
 
 
 ## GITHUB
+
+git remote -->
+git remote -v -->
+git remote show -->
+git remote show origin -->
+
+git remote add <nombre> <url> -->
+>[!Note]
+>El nombre por defecto es origin
+>La url la conseguimos de github
+
+git remote -v
+git push origin main
+git push <nombre_corto-remoto> <nombre_rama>
+git clone <url> --> Clonar repositorio github
+
+git pull 
+git fetch <>
+git remote rename <nombre_antiguo> <nombre_nuevo>
