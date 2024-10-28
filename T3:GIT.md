@@ -85,20 +85,29 @@ git clone
 ## GITHUB
 
 git remote -->
+
 git remote -v -->
+
 git remote show -->
+
 git remote show origin -->
 
 git remote add <nombre> <url> -->
+
 >[!Note]
 >El nombre por defecto es origin
 >La url la conseguimos de github
 
 git remote -v
+
 git push origin main
+
 git push <nombre_corto-remoto> <nombre_rama>
+
 git clone <url> --> Clonar repositorio github
 
 git pull 
+
 git fetch <>
+
 git remote rename <nombre_antiguo> <nombre_nuevo>
