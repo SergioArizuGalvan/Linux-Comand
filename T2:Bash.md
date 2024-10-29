@@ -159,19 +159,17 @@ bash nombre.sh
 
 ./nombre.sh
 
-
-OPERACIONES CON NUMEROS ENTEROS
+## OPERACIONES CON NUMEROS ENTEROS
 
 let <operacion>
 
-Operaciones con decimales
+### Operaciones con decimales
 
 bc <<< operacion
 
-Operaciones guardadas en variables
+### Operaciones con valores guardados en variables
 
 resultado=$((<operacion>))
-
 
 ## CONDICIONALES
 
@@ -186,7 +184,7 @@ else
 fi
 ```
 
-Los condicionales:
+### Los condicionales:
 | Para los numeros | No numéricos |
 | :---: | :---: |
 | -eq |	= |
@@ -206,7 +204,7 @@ accion2)
 	comandos accion2;;
 esac
 ```
-
+## Bucles
 ### While
 ```
 while [condicion]
@@ -230,11 +228,9 @@ do
 done
 ```
 
-
 seq <empezar> <salto> <nºveces>
 > [!NOTE]
 > Para usarlo en un for hay que ponerlo entre comillas inversas (`)
-
 
 ## Funciones
 ```
