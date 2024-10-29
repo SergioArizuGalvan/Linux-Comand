@@ -71,13 +71,14 @@ more --> printar fichero paginado
 
 ##PERMISOS
 Primer caracter:
-	- --> ficehro
-	d --> directorio
-	b,c --> especiales
-	2-4 caracteres (u) = propietario
-	5-7 caracteres (g)= grupo del propietario
-	8-10 caracteres (o)= otros usuarios
-	todos (a)
+| 1 caracter | 2-4 caracter | 5-7 caracter | 8-10 caracter |
+| :---: | :---: | :---: | :---: |
+| - --> ficehro
+d --> directorio
+b,c --> especiales |	(u) = propietario | (g)= grupo del propietario | (o)= otros usuarios |
+
+>[!Note
+>todos (a)
 	
 	significado letras:
 		w --> write - escribir
@@ -223,7 +224,7 @@ seq <empezar> <salto> <nºveces>
 > Para usarlo en un for hay que ponerlo entre comillas inversas (`)
 
 
-## Funciones****************************+
+## Funciones
 ```
 Funcion()
 {
