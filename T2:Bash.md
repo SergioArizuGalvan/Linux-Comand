@@ -1,4 +1,4 @@
-# Guia de Comandos Linux:
+# Tema 2: Bash
 
 echo --> printar en pantalla
 
@@ -37,7 +37,7 @@ si usamos * con rm, se eliminara todo con escepcion de lo que empiece con un pun
 
 grep "palabra_buscar" nombre_archivo --> Para ver solo las lineas que contienen la "palabra_buscar" en el archivo "nombre_Archivo"
 
-##Clase
+# Clase
 
 pwd
 ls
@@ -47,9 +47,11 @@ echo
  --> \c --> Mantener cursor en línia
  --> \b --> 
  --> \n --> 
-
+# Directorios
 mkdir --> crear directorio
+
 rmdir --> borrar directorio
+
 gedit (no instalado en parrot) = nano
 gedit aaa.txt& (&-->ejecucion en backgroung permite seguir usando terminal sin cerrar ventana) 
 
@@ -102,11 +104,12 @@ grep [-v] "palabra_buscar" fichero --> buscar cosas en un fichero. Si se usa -v,
 	-* --> 0 o mas repeticiones del caracter anterior
 	-^$ --> lineas vacias
 paste [-d] fichero1 fichero2 --> concadenar ficheros de forma horizontal. Si se usa -d, se mustra el caracter posterior a -d entre las lineas de los ficheros.
+
 sort [-k2] [-t<caracter>] --> mostrar por terminal el fichero de forma ordenada [A-Z]. Si se usa -kn, donde n es un número, se ordena por el campo n. (los campos se cuentan por espacios en blanco). SI se usa -t seguido de un caracter, en vez de usar los espacios en blanco se usara ekl caracter establecido.
+
 cut [-d<caracter>] [-f2] --> mostrar por terminal campos de un fichero
+
 wc --> contar cosas de un fichero.(lineas, palabras, caracteres, nombre fichero)
-
-
 
 # REDIRECCION DE SALIDA DE FICHERO
 
