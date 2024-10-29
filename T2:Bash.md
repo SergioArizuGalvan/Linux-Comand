@@ -55,46 +55,55 @@ rmdir --> borrar directorio
 gedit (no instalado en parrot) = nano
 gedit aaa.txt& (&-->ejecucion en backgroung permite seguir usando terminal sin cerrar ventana) 
 
-##CARACTERES COMODÍN
-```
-* --> cualquier cosa
-? --> cualquier cosa 1 caracter
-[a,b,c] --> cualquier caracter entre a,b y c
-[a-c] --> cualquier caracter entre los valores (a y c).
-```
+## CARACTERES COMODÍN
+| Caracter | Q hace |
+| :---: | :---: |
+| * | Cualquier cosa |
+| ? | Cualquier cosa 1 caracter |
+| [a,b,c] | Cualquier caracter entre a,b y c |
+| [a-c] | Cualquier caracter entre los valores (a y c) |
+
 cp origen destino --> copiar de origen a destino
+
 mv --> mover/renombrar archivo
+
 rm --> eliminar fichero
+
 cat --> printar fichero seguido
+
 more --> printar fichero paginado
 
+## PERMISOS
 
-##PERMISOS
-Primer caracter:
 | 1 caracter | 2-4 caracter | 5-7 caracter | 8-10 caracter |
 | :---: | :---: | :---: | :---: |
 | - --> ficehro
 d --> directorio
 b,c --> especiales |	(u) = propietario | (g)= grupo del propietario | (o)= otros usuarios |
 
->[!Note
+> [!Note]
 >todos (a)
-	
-	significado letras:
-		w --> write - escribir
-		r --> read - leer
-		x --> execution - ejecucion 
+
+significado letras:
+| Caracter | Significado |
+| :---: | :---: |
+| w | write - escribir |
+| r | read - leer |
+| x | execution - ejecucion |  
 
 chmod [ugo/a] [+-] [rwx]--> cambiar permisos
 
-Permisos se pueden dar en binario (normalmente se proporcionan así)
-744 --> normalmente (rwx r-- r--)
-777--> fichero sin problemas de permisos para nadie
-
+> [!Note]
+>Permisos se pueden dar en binario (normalmente se proporcionan así)
+> 744 --> normalmente (rwx r-- r--)
+> 777--> fichero sin problemas de permisos para nadie
 
 head [-n] --> mostrar primeras líneas de un fichero (por defecto las 10 primeras, con n muestras un numero definido)
+
 tail [-n] --> mostrar ultimas líneas de un fichero (por def 10)
+
 tail [+n] --> desde la línia establecida hasta el final
+
 grep [-v] "palabra_buscar" fichero --> buscar cosas en un fichero. Si se usa -v, se muestra todo menos palabra_buscada
 	-. --> cualquier caracter diferente de final de linea
 	-[abc] --> letra a, b o c
@@ -104,9 +113,10 @@ grep [-v] "palabra_buscar" fichero --> buscar cosas en un fichero. Si se usa -v,
 	-$ --> final de linea
 	-* --> 0 o mas repeticiones del caracter anterior
 	-^$ --> lineas vacias
+
 paste [-d] fichero1 fichero2 --> concadenar ficheros de forma horizontal. Si se usa -d, se mustra el caracter posterior a -d entre las lineas de los ficheros.
 
-sort [-k2] [-t<caracter>] --> mostrar por terminal el fichero de forma ordenada [A-Z]. Si se usa -kn, donde n es un número, se ordena por el campo n. (los campos se cuentan por espacios en blanco). SI se usa -t seguido de un caracter, en vez de usar los espacios en blanco se usara ekl caracter establecido.
+sort [-k2] [-t<caracter>] --> mostrar por terminal el fichero de forma ordenada [A-Z]. Si se usa -kn, donde n es un número, se ordena por el campo n. (los campos se cuentan por espacios en blanco). Si se usa -t seguido de un caracter, en vez de usar los espacios en blanco se usara ekl caracter establecido.
 
 cut [-d<caracter>] [-f2] --> mostrar por terminal campos de un fichero
 
@@ -138,6 +148,8 @@ comilla simple ' --> guarda tal cual el texto. NO interpreta caracteres
 comillas dobles " --> guarda el texto interpretando caracteres
 
 comillas inversas ` --> ejecutar comando entre las comillas inversas.
+
+
 
 Bash se guardan como nombre.sh
 
@@ -174,7 +186,7 @@ else
 fi
 ```
 
-los condicionales:
+Los condicionales:
 | Para los numeros | No numéricos |
 | :---: | :---: |
 | -eq |	= |
