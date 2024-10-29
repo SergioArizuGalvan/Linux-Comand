@@ -1,16 +1,26 @@
-Guia de Comandos Linux:
+#Guia de Comandos Linux:
+
 echo --> printar en pantalla
+
 pwd --> Printar directorio actual
+
 ls --> Printar contenido del directorio
+
 cat nombre_archivo --> printar archivo por pantalla
-cat > nombre_archivo --> Crear archivo vacio llamado "nombre_archivo"
+> [!NOTE]
+>cat > nombre_archivo --> Crear archivo vacio llamado "nombre_archivo"
+
 tail -n nombre_archivo --> Printar las ultimas n lineas de un archivo
-  Si se usa: +n --> printar des de la linea n
+> [!NOTE]
+> Si se usa: +n --> printar des de la linea n
 
 mkdir -p /dir1/dir2 --> Crear el/los directorio/s si todavia no existen.
 
 cp archivo1 dir1 --> Copiar archivo a algun directorio
+
 mv archivo1 dir1 --> Mover archivo a algun directorio
+> [!NOTE]
+> Tambien sirve para renombrar ficheros
 
 ln -s ruta_archivo ruta_enlace --> Crear enlace simbolico (symlink)
 
@@ -43,11 +53,13 @@ rmdir --> borrar directorio
 gedit (no instalado en parrot) = nano
 gedit aaa.txt& (&-->ejecucion en backgroung permite seguir usando terminal sin cerrar ventana) 
 
-CARACTERES COMODÍN
+##CARACTERES COMODÍN
+```
 * --> cualquier cosa
 ? --> cualquier cosa 1 caracter
 [a,b,c] --> cualquier caracter entre a,b y c
 [a-c] --> cualquier caracter entre los valores (a y c).
+```
 cp origen destino --> copiar de origen a destino
 mv --> mover/renombrar archivo
 rm --> eliminar fichero
@@ -55,11 +67,11 @@ cat --> printar fichero seguido
 more --> printar fichero paginado
 
 
-PERMISOS
-	primer caracter:
-		- --> ficehro
-		d --> directorio
-		b,c --> especiales
+##PERMISOS
+Primer caracter:
+	- --> ficehro
+	d --> directorio
+	b,c --> especiales
 	2-4 caracteres (u) = propietario
 	5-7 caracteres (g)= grupo del propietario
 	8-10 caracteres (o)= otros usuarios
@@ -120,7 +132,7 @@ Si "__|__" , ejecución del 1r comando y lo concatena con el 2o comando.
 
 comilla simple ' --> guarda tal cual el texto. NO interpreta caracteres
 comillas dobles " --> guarda el texto interpretando caracteres
-comillas inversas ` --> ejecutar comando entre `.
+comillas inversas ` --> ejecutar comando entre las comillas inversas.
 
 Bash se guardan como nombre.sh
 
@@ -198,10 +210,8 @@ done
 
 
 seq <empezar> <salto> <nºveces>
-para usarlo en un for hay que ponerlo entre comillas inversas (`)
-
-
-
+> [!NOTE]
+> Para usarlo en un for hay que ponerlo entre comillas inversas (`)
 
 
 funciones****************************+
