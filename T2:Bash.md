@@ -130,17 +130,20 @@ Si "__<<__" , los datos los recibe desde terminalk hasta llegar a la palabra de 
 Si "__|__" , ejecución del 1r comando y lo concatena con el 2o comando.
 
 *******************************************TEMA 2.2 ***********************************************************************
-> [!NOTE]
-> Caracteres:
+## Caracteres:
 
 comilla simple ' --> guarda tal cual el texto. NO interpreta caracteres
+
 comillas dobles " --> guarda el texto interpretando caracteres
+
 comillas inversas ` --> ejecutar comando entre las comillas inversas.
 
 Bash se guardan como nombre.sh
 
 llamar a ejecucion un script:
+
 bash nombre.sh
+
 ./nombre.sh
 
 
@@ -157,9 +160,9 @@ Operaciones guardadas en variables
 resultado=$((<operacion>))
 
 
-# CONDICIONALES
+## CONDICIONALES
 
-## IF
+### IF
 ```
 if [condicion] ;
 
@@ -180,7 +183,7 @@ los condicionales:
 | -le | <= |
 | -ge |	>= |
 
-
+### Switch
 ```
 case <variable> in
 accion1)
@@ -190,6 +193,8 @@ accion2)
 	comandos accion2;;
 esac
 ```
+
+### While
 ```
 while [condicion]
 do
@@ -203,7 +208,7 @@ do
 	comandos
 done
 ```
-
+### For
 ```
 for <variable> in <conjunto_valores>
 do
@@ -217,16 +222,20 @@ seq <empezar> <salto> <nºveces>
 > Para usarlo en un for hay que ponerlo entre comillas inversas (`)
 
 
-funciones****************************+
+## Funciones****************************+
 ```
 Funcion()
 {
 	....
 }
 ```
+> [!NOTE]
+> Para llamar a una funcion se usa el comando:
+> Nombre_funcion
 
 Funcion (llamada a la funcion llamada Funcion)
 
 
 Pasar valores a la funcion:
+
 Funcion <valor1> <valor2>
