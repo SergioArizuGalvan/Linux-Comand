@@ -1,4 +1,4 @@
-#Guia de Comandos Linux:
+# Guia de Comandos Linux:
 
 echo --> printar en pantalla
 
