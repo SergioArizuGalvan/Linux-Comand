@@ -27,6 +27,73 @@ si usamos * con rm, se eliminara todo con escepcion de lo que empiece con un pun
 
 grep "palabra_buscar" nombre_archivo --> Para ver solo las lineas que contienen la "palabra_buscar" en el archivo "nombre_Archivo"
 
+##Clase
+
+pwd
+ls
+cd
+echo
+ --> \n --> Salto línia
+ --> \c --> Mantener cursor en línia
+ --> \b --> 
+ --> \n --> 
+
+mkdir --> crear directorio
+rmdir --> borrar directorio
+gedit (no instalado en parrot) = nano
+gedit aaa.txt& (&-->ejecucion en backgroung permite seguir usando terminal sin cerrar ventana) 
+
+CARACTERES COMODÍN
+* --> cualquier cosa
+? --> cualquier cosa 1 caracter
+[a,b,c] --> cualquier caracter entre a,b y c
+[a-c] --> cualquier caracter entre los valores (a y c).
+cp origen destino --> copiar de origen a destino
+mv --> mover/renombrar archivo
+rm --> eliminar fichero
+cat --> printar fichero seguido
+more --> printar fichero paginado
+
+
+PERMISOS
+	primer caracter:
+		- --> ficehro
+		d --> directorio
+		b,c --> especiales
+	2-4 caracteres (u) = propietario
+	5-7 caracteres (g)= grupo del propietario
+	8-10 caracteres (o)= otros usuarios
+	todos (a)
+	
+	significado letras:
+		w --> write - escribir
+		r --> read - leer
+		x --> execution - ejecucion 
+
+chmod [ugo/a] [+-] [rwx]--> cambiar permisos
+
+Permisos se pueden dar en binario (normalmente se proporcionan así)
+744 --> normalmente (rwx r-- r--)
+777--> fichero sin problemas de permisos para nadie
+
+
+head [-n] --> mostrar primeras líneas de un fichero (por defecto las 10 primeras, con n muestras un numero definido)
+tail [-n] --> mostrar ultimas líneas de un fichero (por def 10)
+tail [+n] --> desde la línia establecida hasta el final
+grep [-v] "palabra_buscar" fichero --> buscar cosas en un fichero. Si se usa -v, se muestra todo menos palabra_buscada
+	-. --> cualquier caracter diferente de final de linea
+	-[abc] --> letra a, b o c
+	-[^abc] --> letra diferente a a, b y c
+	-[a-z] --> 
+	-^ --> desde principio de linea
+	-$ --> final de linea
+	-* --> 0 o mas repeticiones del caracter anterior
+	-^$ --> lineas vacias
+paste [-d] fichero1 fichero2 --> concadenar ficheros de forma horizontal. Si se usa -d, se mustra el caracter posterior a -d entre las lineas de los ficheros.
+sort [-k2] [-t<caracter>] --> mostrar por terminal el fichero de forma ordenada [A-Z]. Si se usa -kn, donde n es un número, se ordena por el campo n. (los campos se cuentan por espacios en blanco). SI se usa -t seguido de un caracter, en vez de usar los espacios en blanco se usara ekl caracter establecido.
+cut [-d<caracter>] [-f2] --> mostrar por terminal campos de un fichero
+wc --> contar cosas de un fichero.(lineas, palabras, caracteres, nombre fichero)
+
 
 
 # REDIRECCION DE SALIDA DE FICHERO
